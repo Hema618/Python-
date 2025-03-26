@@ -1,0 +1,77 @@
+(i)Write a python program to accept a year and verify the given year is leap year or not?
+
+Program:
+--------
+num=int(input("Enter a year"))
+if num%4=0
+    print("The given year is leap year")
+else:
+    print("The given year is not a leap year")
+
+Output:
+------
+Enter a year:2024
+
+The given year is leap year
+
+(ii)Write a python program to accept a number and verify the given number is in between 1 to 100?
+
+Program:
+-------
+num=int(input("Enter a number:"))
+if num>=1 and num<=100
+      print("The given number is within the range")
+else:
+    print("The given number is not within the range")
+
+Output:
+-------
+Enter a number:99
+
+The given number is within the range
+
+(iii)Write a python program to accept two number and find biggest number among two numbers?
+
+Program:
+-------
+num1=int(input("Enter first number:"))
+num2=int(input("Enter second number:"))
+if num1>=num2:
+      print("The given number is bigger number")
+else:
+    print("The given number is smaller")
+
+Output:
+------
+Enter first number:58
+
+Enter second number:72
+
+The given number is smaller
+
+
+(iv)Write a python program to accept thre  numbers and find biggest among three numbers?
+
+Program:
+-------
+num1=int(input("Enter first number:"))
+num2=int(input("Enter second number:"))
+num3=int(input("Enter third number:"))
+if num1>num2 and num1>num3:
+      print("num1 is greater")
+elif num2>num3:
+      print("num2 is greater")
+else:
+    print("num3 is greater") 
+
+Output:
+-------
+Enter first number:28
+
+Enter second number:55
+
+Enter third number:99
+
+num3 is greater
+
+(v)Write a python program to accept a number and print respective word?

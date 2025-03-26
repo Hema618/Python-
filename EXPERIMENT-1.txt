@@ -1,0 +1,196 @@
+1.Programs using basic concepts:
+--------------------------------
+
+(i)Write a python program to perform arithemetic operators without input function?
+
+Program:
+-------
+a=10
+
+b=15
+
+print(a+b)
+
+print(a-b)
+
+print(a*b)
+
+print(a/b)
+
+print(a%b)
+
+print(a//b)
+
+print(a**b)
+
+Output:
+------
+25
+
+-5
+
+150
+
+0.6666666666666666
+
+10
+0
+
+1000000000000000
+
+(ii)Write a python program to perform arithemetic operators using input function?
+
+Program:
+-------
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+
+print(a+b)
+
+print(a-b)
+
+print(a*b)
+
+print(a/b)
+
+print(a%b)
+
+print(a//b)
+
+print(a**b)
+
+Output:
+------
+Enter first number:10
+
+Enter second number:5
+
+15
+
+5
+
+50
+
+2.0
+
+0
+
+2
+
+100000
+
+(iii)Write a python program to perform comparison operators without input function?
+
+Program:
+-------
+a=20
+b=50
+print(a<b)
+print(a>b)
+print(a<=b)
+print(a>=b)
+
+Output:
+-------
+True
+False
+True
+False
+
+(iv)Write a python program to accept two values and perform swapping of two numbers?
+
+Program:
+--------
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+temp=a
+a=b
+b=temp
+print("After swapping of two numbers are:")
+print("==================================")
+print("first value is:",a)
+print("second value is:",b)
+
+Output:
+------
+Enter first number:10
+
+Enter second number:9
+
+After swapping of two numbers are:
+
+==================================
+
+first value is: 9
+
+second value is: 10
+
+(v)Write a python program to find area of the triangle?
+
+Program:
+-------
+base=float(input("Enter base:"))
+height=float(input("Enter height:"))
+print("Area of triangle:",0.5*base*height)
+
+Output:
+------
+Enter base:5
+
+Enter height:12
+
+Area of triangle: 30.0
+
+(vi)Write a python program to find area and perimeter of rectangle?
+
+Program:
+--------
+length=float(input("Enter length:"))
+breadth=float(input("Enter breadth:"))
+print("Area of rectangle=",length*breadth)
+print("perimeter of rectangle=",2*(length*breadth))
+
+Output:
+-------
+Enter length:10
+
+enter breadth:5
+
+Area of rectangle= 50.0
+
+perimeter of rectangle= 100.0
+
+
+(vii)Write a python program to find radius of the circle?
+
+Program:
+-------
+a=float(input("Enter area:"))
+print("Radius:",(A/3.14)**0.5)
+
+Output:
+------
+Enter area:55
+
+Radius: 4.185202930190958
+(viii)Write a python program to generate six digit OTP number using random module?
+(ix)Write a python program to accept a user name and verify the given user is authorized user or not?
+(x)Write a python program to accept three numbers and find minimum value?
+
+Program:
+---------
+num1=int(input("Enter first number:"))
+num2=int(input("Enter second number:"))
+num3=int(input("Enter third number:"))
+l=[num1,num2,num3]
+print("The minimum of the 3 numbers is:",min(l))
+
+Output:
+------
+Enter first number:18 
+
+Enter second number:6
+
+Enter third number:24
+
+The minimum of the 3 numbers is:6
