@@ -1,0 +1,162 @@
+7.Programs using recursion:
+==========================
+
+1.Write a python program to find fibonacci series of numbers using recursive function?
+
+Program:
+--------
+def fibonacci(number):
+
+    if(number==0):
+
+        return 0
+
+    elif number==1:
+        return 1
+
+    else:
+
+        return fibonacci(number-2)+fibonacci(number-1)
+
+number=int(input("Please Enter the fibonacci Number Range="))
+
+sum=0
+
+for num in range(number):
+
+    print(fibonacci(num),end='')
+
+    sum=sum+fibonacci(num)
+
+    print("\n the sum of fibonacci series number=%d"%sum)
+ 
+
+Output:
+-------
+Please Enter the fibonacci Number Range=5
+
+0
+ 
+the sum of fibonacci series number=0
+
+1
+ 
+the sum of fibonacci series number=1
+
+1
+ 
+the sum of fibonacci series number=2
+
+2
+ 
+the sum of fibonacci series number=4
+
+3
+ 
+the sum of fibonacci series number=7
+
+
+2.how to find a factorial value of given number using recursive function?
+
+Program:
+--------
+def factorial(n):
+
+    if n==0:
+
+        return 0
+
+   if n==1:
+
+        return 1
+
+    else:
+
+        return n*factorial(n-1)
+
+n=int(input("Enter any number:"))
+
+print("Factorial value of",n,"is:",factorial(n))
+
+Output:
+------
+Enter any number:6
+
+Factorial value of 6 is: 720
+
+
+3.Write a python program to the given string is palindrome or not?
+
+Program:
+-------    
+def pal(s):
+
+    s=s.lower()
+
+    if len(s)<=1:
+
+        return True
+
+    elif s[0]!=s[-1]:
+
+        return False
+
+    else:
+
+        return pal(s[1:-1])
+
+myinput=input("Enter a string:")
+
+if pal(myinput):
+
+    print(f"{myinput} is a palindrome")
+
+else:
+
+    print(f"{myinput} is not a palindrome")    
+
+Output:
+-------
+Enter a string:MADAM
+
+MADAM is a palindrome   
+
+4.Write a python program to find gcd of two numbers using recursive function
+
+program:
+-------
+def gcd(a,b):
+
+    if b==0:
+
+        return a
+
+    else:
+
+        return gcd(b,a%b)
+
+x=input("Enter the first integers:")
+
+y=input("Enter the second integers:")
+
+if x.isdigit() and y.isdigit():
+
+    a=int(x)
+
+    b=int(y)
+
+    result=gcd(a,b)
+
+    print(f"the gcd of{a} and {b} is:",result)
+
+else:
+
+    print("Please enter valid integers")
+
+Output:
+-------
+Enter the first integers:21
+
+Enter the second integers:18
+
+the gcd of21 and 18 is: 3

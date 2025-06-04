@@ -1,0 +1,219 @@
+4.Programs using functions:
+==========================
+
+(i)Write a python program to find GCD of two numbers using functions?
+
+Program:
+--------
+def gcd(a,b):
+
+    while b!=0:
+
+        a,b=b,a%b
+
+    return a
+
+num1=int(input("Enter the first number:"))
+
+num2=int(input("Enter the second number:"))
+
+result=gcd(num1,num2)
+
+print("The GCD of",num1,"and",num2,"is",result)
+
+Output:
+------
+Enter the first number:28
+
+Enter the second number:13
+
+The GCD of 28 and 13 is 1
+
+(ii)Write a python program to find even or odd numbers using function?
+
+Program:
+--------
+def check_even_odd(number):
+
+    if number%2==0:
+
+        return "Even"
+
+    else:
+
+        return "odd"
+
+num=int(input("Enter a number:"))
+
+result=check_even_odd(num)
+
+print("The number is",result)
+
+Output:
+------
+Enter a number:78
+
+The number is Even
+
+(iii)Write a python program to find factorial values 1 to 10 using functions?
+
+Program:
+--------
+def factorial(n):
+
+    if n==0:
+
+        return 1
+
+    else:
+
+        return n*factorial(n-1)
+
+for i in range(1,11):
+
+    result=factorial(i)
+
+    print("Factorial of",i,"is",result)
+
+Output:
+------
+Factorial of 1 is 1
+
+Factorial of 2 is 2
+
+Factorial of 3 is 6
+
+Factorial of 4 is 24
+
+Factorial of 5 is 120
+
+Factorial of 6 is 720
+
+Factorial of 7 is 5040
+
+Factorial of 8 is 40320
+
+Factorial of 9 is 362880
+
+Factorial of 10 is 3628800
+
+(iv)Write a python program to find factorial valur of a given number using functions?
+
+Program:
+--------
+def factorial(n):
+
+    if n==0:
+
+        return 1
+
+    else:
+
+        return n*factorial(n-1)
+
+num=int(input("Enter a number:"))
+
+result=factorial(num)
+
+print("The factorial of",num,"is",result)
+
+Output:
+------
+Enter a number:6
+
+The factorial of 6 is 720
+
+
+(v)Write a python program to find sum of a list using function?
+
+Program:
+--------
+def calculate_sum(numbers):
+
+    total=0
+
+    for num in numbers:
+
+       total+=num
+
+    return total
+
+list=[]
+
+n=int(input("Enter the numbers of elements in the list:"))
+
+for i in range(n):
+
+    num=eval(input("Enter element {}:".format(i+1)))
+
+    list.append(num)
+
+    result=calculate_sum(list)
+
+    print("The sum of the list is",result)
+
+Output:
+------
+Enter the numbers of elements in the list:4
+
+Enter element 1:10
+
+The sum of the list is 10
+
+Enter element 2:20
+
+The sum of the list is 30
+
+Enter element 3:30
+
+The sum of the list is 60
+
+Enter element 4:40
+
+The sum of the list is 100
+
+(vi)Write a python program to perform arithmetic operations using functions?
+
+Program:
+--------
+def add(x,y):
+
+    return x+y
+
+def subtract(x,y):
+
+    return x-y
+
+def multiply(x,y):
+
+    return x*y
+
+def divide(x,y):
+
+    return x/y
+
+num1=float(input("Enter the first number:"))
+
+num2=float(input("Enter the second number:"))
+
+print("Addition:",add(num1,num2))
+
+print("Subtraction:",subtract(num1,num2))
+
+print("Multiplication:",multiply(num1,num2))
+
+print("Division:",divide(num1,num2))
+
+Output:
+------
+Enter the first number:2
+
+Enter the second number:5
+
+Addition: 7.0
+
+Subtraction: -3.0
+
+Multiplication: 10.0
+
+Division: 0.4

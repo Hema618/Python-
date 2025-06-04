@@ -1,0 +1,217 @@
+3.Programs using list functions:
+=================================
+
+(1)Write a python program to create empty list and store the elements?
+
+Program:
+--------
+mylist=[]
+n=int(input("Enter any number:"))
+
+for x in range(n):
+
+    num=int(input("Enter a number:"))
+
+    mylist.append(num)
+
+    print("My updated list is:",mylist)
+
+Output:
+------
+Enter any number:4
+
+Enter a number:10
+
+My updated list is: [10]
+
+Enter a number:20
+
+My updated list is: [10, 20]
+
+Enter a number:30
+
+My updated list is: [10, 20, 30]
+
+Enter a number:40
+
+My updated list is: [10, 20, 30, 40]
+
+(2)Write a python program to accessing and removing the element from a list?
+
+Program:
+-------
+l=[10,20,"python",(20+30j),True,False,1]
+
+print(l[3])
+
+print(l[-2])
+
+print(l[1:4])
+
+print(l)
+
+l.remove(20)
+
+print(l)
+
+Output:
+------
+(20+30j)
+
+False
+
+[20, 'python', (20+30j)]
+
+[10, 20, 'python', (20+30j), True, False, 1]
+
+[10, 'python', (20+30j), True, False, 1]
+
+
+(3)Write a python program to find min and max, length of a list?
+
+Program:
+--------
+l=[10,20,30,40,60,True,1]
+
+print(len(l))
+
+print(l)
+
+print(max(l))
+
+print(min(l))
+
+Output:
+-------
+7
+
+[10, 20, 30, 40, 60, True, 1]
+
+60
+
+True
+
+(4)Write a python program to find sum of the elements in a list?
+
+Program:
+-------
+mylist=[2,3,8,7,4]
+
+sum=0
+
+for i in mylist:
+
+    sum=sum+i
+
+    print("the sum is:", sum)
+
+Output:
+------
+the sum is: 2
+
+the sum is: 5
+
+the sum is: 13
+
+the sum is: 20
+
+the sum is: 24
+
+(5)Write a python program to accept a string and converted into a list?
+
+
+Program:
+-------
+s=input("Enter the string:")
+
+print(s.split())
+
+Output:
+------
+Enter the string:python is a high-level programming language
+
+['python', 'is', 'a', 'high-level', 'programming', 'language']
+
+
+(6)Write a python program to N numbers and store them in list, then print the list without odd numbers in it?
+
+
+Program:
+-------
+n=int(input("Enter the value of n:"))
+
+mylist=[]
+
+for i in range(n):
+
+    num=int(input("Enter a number:"))
+
+    mylist.append(num)
+
+    print("even numbers are")
+
+    print("[",end=" ")
+
+    for num in mylist:
+
+        if num%2==0:
+
+            print(num,end=",")
+
+            print("]")
+
+Output:
+------
+enter the value of n:3
+
+enter a number:10
+
+enter a number:20
+
+enter a number:33
+
+even numbers are
+[10,20]
+
+(7)Write a python program to remove specific element, reverse the list,copy the list into another list?
+
+
+Program:
+-------
+list=[20,10,80,"python",(20+30j),0,False,True,1]
+
+print(list)
+
+x=list.copy()
+
+print(x)
+
+list.pop(3)
+
+print(list)
+
+del list[2]
+
+print(list)
+
+list.reverse()
+
+print(list)
+
+list.clear()
+
+print(list)
+
+Output:
+------
+[20, 10, 80, 'python', (20+30j), 0, False, True, 1]
+
+[20, 10, 80, 'python', (20+30j), 0, False, True, 1]
+
+[20, 10, 80, (20+30j), 0, False, True, 1]
+
+[20, 10, (20+30j), 0, False, True, 1]
+
+[1, True, False, 0, (20+30j), 10, 20]
+[]
+
