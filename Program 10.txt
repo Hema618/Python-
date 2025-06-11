@@ -1,0 +1,125 @@
+10.Programs using Exception Handlings
+=====================================
+
+1)write a python program for division zero error?
+
+Program:
+--------
+try:
+
+    x=10/0
+
+except Exception as e:
+
+    print("An error occured:",str(e))
+
+Output:
+-------
+An error occured: division by zero
+
+2)write a python program to handle multiple exceptions?
+
+Program:
+--------
+try:
+
+    num=int(input("Enter a number:"))
+
+    result=10/num
+ 
+    print("Result:",result)
+
+except ValueError:
+
+    print("Error:Invalid input!Please enter a valid number")
+
+except ZeroDivisionError:
+
+    print("Error:Divison by Zero!")
+
+Output:
+-------
+Enter a number:5
+
+Result: 2.0
+
+
+3)write a python program to handle multiple exceptions using else clause?
+
+Program:
+-------
+try:
+
+    num=int(input("Enter a number:"))
+
+    result=10/num
+
+except ValueError:
+
+    print("Error:Invalid input!Please enter a valid number")
+
+except ZeroDivisionError:
+
+    print("Error:Division by Zero!")
+
+else:
+
+    print("Result:",result)
+
+Output:
+------
+Enter a number:10
+
+Result: 1.0
+
+4)write a python program to perform exceptions with final block?
+
+Program:
+--------
+try:
+
+    file=open("list.txt","r")
+
+except IOError:
+
+    print("Error:unable to read the file!")
+
+finally:
+
+    file.close()
+
+Output:
+-------
+ Error:unable to read the file!
+
+Traceback (most recent call last):
+  File "/main.py", line 6, in <module>
+    file.close()
+   
+NameError: name 'file' is not defined. Did you mean: 'filter'?
+
+5)write a python program to find out the given number is within range or not?
+
+Program:
+--------
+try:
+
+    x=int(input("Enter a number upto 100:"))
+
+    if x>100:
+
+        raise ValueError(x)
+
+except ValueError:
+
+    print(x,"is out of allowed range")
+
+else:
+
+    print(x,"is within the allowed range")
+
+Output:
+------
+Enter a number upto 100:99
+
+99 is within the allowed range
